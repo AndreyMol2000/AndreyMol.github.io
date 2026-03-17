@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Андрей Молчанов | Веб-разработчик</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к контенту</a>
+
+  <div class="page">
+    <header class="header">
+      <div class="logo">andrey.dev</div>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#hero">Главная</a>
+        <a href="#work">Проекты</a>
+        <a href="#about">О себе</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <h1>Андрей Молчанов</h1>
+          <h2>Веб-разработчик</h2>
+          <p>
+            Делаю современные и понятные сайты, изучаю фронтенд и стараюсь
+            писать чистый, аккуратный код. Интересуюсь адаптивной версткой,
+            JavaScript и созданием удобных интерфейсов.
+          </p>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <h2 class="section-title" id="work-title">Мои проекты</h2>
+
+        <div class="work__grid">
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Главная страница сайта доставки еды">
+            <h3>Сайт доставки еды</h3>
+            <p>Учебный проект с адаптивной версткой, карточками и секциями.</p>
+          </article>
+
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Интерфейс приложения для учета бюджета">
+            <h3>Трекер бюджета</h3>
+            <p>Консольный и веб-проект для учета доходов и расходов.</p>
+          </article>
+
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Лендинг с современной адаптивной версткой">
+            <h3>Адаптивный лендинг</h3>
+            <p>Лендинг с использованием Grid, Flexbox и аккуратной типографики.</p>
+          </article>
+
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Сайт-портфолио с карточками проектов">
+            <h3>Портфолио</h3>
+            <p>Личный сайт с проектами, блоком о себе и формой обратной связи.</p>
+          </article>
+
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Интерфейс веб-приложения с формами и таблицами">
+            <h3>Веб-приложение</h3>
+            <p>Практика работы с интерфейсами, формами и структурой страницы.</p>
+          </article>
+
+          <article class="work__card">
+            <img src="./img/portfolio.jpg" alt="Страница с современным пользовательским интерфейсом">
+            <h3>UI-практика</h3>
+            <p>Набор небольших макетов для тренировки верстки и композиции.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-photo" aria-label="Фотография Андрея Молчанова">
+        <img src="./img/me.jpg" alt="Фото Андрея Молчанова">
+      </section>
+
+      <section class="about-text" id="about" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title">О себе</h2>
+        <p>
+          Я начинающий веб-разработчик, учусь и постепенно собираю свое портфолио.
+          Больше всего мне нравится фронтенд, потому что там сразу видно результат:
+          из кода получается реальный интерфейс.
+        </p>
+        <p>
+          Сейчас я прокачиваю HTML, CSS, JavaScript и адаптивную верстку.
+          Хочу развиваться как сильный frontend-разработчик и делать удобные,
+          быстрые и аккуратные сайты.
+        </p>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Связаться со мной</h2>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required aria-describedby="name-error">
+            <p class="error-message" id="name-error" aria-live="polite">Пожалуйста, введите имя</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <p class="error-message" id="email-error" aria-live="polite">Пожалуйста, введите email</p>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Подписаться на обновления</label>
+          </div>
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><a href="mailto:andrey@example.com">andrey@example.com</a></p>
+      <p>
+        <a href="#">GitHub</a>
+        <span>•</span>
+        <a href="#">Telegram</a>
+        <span>•</span>
+        <a href="#">VK</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
